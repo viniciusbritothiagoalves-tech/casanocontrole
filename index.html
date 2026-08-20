@@ -1184,9 +1184,11 @@
           try {
             const checkoutUrl = new URL(link.href);
             
-            // Copia todos os parâmetros da URL de origem para o link de checkout
+            // Copia os parâmetros da URL de origem para o link de checkout (filtrando os utm_ para evitar duplicidade)
             urlParams.forEach((value, key) => {
-              checkoutUrl.searchParams.set(key, value);
+              if (!key.startsWith('utm_')) {
+                checkoutUrl.searchParams.set(key, value);
+              }
             });
             
             // Atualiza o href do botão com os parâmetros anexados
