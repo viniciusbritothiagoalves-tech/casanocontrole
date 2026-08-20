@@ -107,7 +107,7 @@
 
           <!-- Parágrafo de Apoio (Sem culpa, acolhedor) -->
           <p class="text-lg lg:text-xl text-gray-200 font-sans leading-relaxed mb-8 max-w-xl">
-            Você não precisa cortar tudo o que gosta ou transformar sua vida em uma planilha. Primeiro, você precisa enxergar para onde o dinheiro está indo. O <strong class="text-white font-semibold">Casa no Controle</strong> transforma essa organização em um método simples de 30 dias, com ferramentas práticas para ajudar você a acompanhar gastos, planejar compras, organizar contas e encontrar oportunidades reais de economia dentro da sua própria rotina.
+            Você não precisa cortar tudo o que gosta ou viver presa a planilhas complicadas. O <strong class="text-white font-semibold">Casa no Controle</strong> é um método simples de 30 dias com ferramentas práticas para você enxergar para onde seu dinheiro está indo, eliminar desperdícios e organizar as contas de forma leve.
           </p>
 
           <!-- Chamada de Ação Primária -->
@@ -193,34 +193,60 @@
       </div>
     </section>
 
-    <!-- 2. OPTIONAL SHORT VIDEO PREVIEW SECTION -->
-    <section id="video-preview" class="py-12 bg-sand px-6 border-b border-gray-200/50">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-xl sm:text-2xl font-bold text-primary-dark font-serif mb-3">Veja como funciona por dentro</h2>
-        <p class="text-sm text-text-light mb-6 max-w-lg mx-auto">
-          Assista a uma rápida demonstração das páginas e entenda como funciona a estrutura de 30 dias do material para preencher.
+    <!-- 2. EBOOK PAGES SLIDESHOW CAROUSEL SECTION -->
+    <section id="ebook-slideshow" class="py-20 bg-sand px-6 border-b border-gray-200/40">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-primary-dark font-serif mb-3">Conheça o Material por Dentro</h2>
+        <p class="text-sm text-text-light mb-8 max-w-md mx-auto">
+          Veja a estrutura real do nosso manual e caderno de ferramentas. Páginas organizadas, limpas e prontas para você preencher.
         </p>
 
-        <!-- Player Mockup Wrapper -->
-        <div id="video-placeholder-container" class="relative rounded-2xl overflow-hidden bg-primary-dark shadow-xl border border-primary-light/20 video-container">
-          <!-- Poster do Vídeo -->
-          <div id="video-overlay" class="video-preview-overlay">
-            <div class="text-center p-6">
-              <button id="play-video-btn" class="w-16 h-16 sm:w-20 sm:h-20 bg-accent hover:bg-accent-hover text-white rounded-full flex items-center justify-center mx-auto shadow-lg hover:scale-105 transition-all focus:outline-none" aria-label="Reproduzir vídeo demonstrativo de 60 segundos">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10 fill-current ml-1" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
-              <p class="text-white text-sm sm:text-base font-semibold mt-4">Vídeo de Demonstração (Rápida de 90 segundos)</p>
-              <p class="text-gray-300 text-xs mt-1">Toque para ver a estrutura interna do PDF</p>
+        <!-- Premium Framed Carousel Container -->
+        <div class="relative max-w-[420px] mx-auto select-none p-3 bg-white rounded-3xl shadow-[0_25px_60px_rgba(15,46,46,0.12)] border border-gray-100">
+          <!-- Slides Wrapper -->
+          <div class="relative overflow-hidden rounded-2xl bg-white aspect-[8.5/11] w-full">
+            
+            <!-- Slide 1 (Sumário) -->
+            <div class="carousel-slide absolute inset-0 opacity-100 transform scale-100 transition-all duration-700 ease-in-out flex flex-col">
+              <img src="slide_sumario.png" alt="Sumário do Método" class="w-full h-full object-contain bg-white" />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 text-white text-center text-[11px] sm:text-xs font-sans">
+                <strong>Sumário do Método:</strong> Roteiro estruturado dia a dia
+              </div>
             </div>
-          </div>
 
-          <!-- Miniatura Falsa Estilizada de Fundo caso o vídeo não seja iniciado -->
-          <div class="w-full h-full bg-gradient-to-br from-primary-medium to-primary-dark flex items-center justify-center opacity-40">
-            <svg class="w-24 h-24 text-white/10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-            </svg>
+            <!-- Slide 2 (Diagnóstico) -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transform scale-95 transition-all duration-700 ease-in-out flex flex-col pointer-events-none">
+              <img src="slide_diagnostico.png" alt="Ficha de Diagnóstico" class="w-full h-full object-contain bg-white" />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 text-white text-center text-[11px] sm:text-xs font-sans">
+                <strong>Ficha de Diagnóstico:</strong> Enxergue a situação financeira real
+              </div>
+            </div>
+
+            <!-- Slide 3 (Supermercado) -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transform scale-95 transition-all duration-700 ease-in-out flex flex-col pointer-events-none">
+              <img src="slide_supermercado.png" alt="Roteiro de Supermercado" class="w-full h-full object-contain bg-white" />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 text-white text-center text-[11px] sm:text-xs font-sans">
+                <strong>Roteiro de Supermercado:</strong> Planeje compras inteligentes sem desperdícios
+              </div>
+            </div>
+
+            <!-- Slide 4 (Calendário) -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transform scale-95 transition-all duration-700 ease-in-out flex flex-col pointer-events-none">
+              <img src="slide_calendario.png" alt="Calendário de Contas" class="w-full h-full object-contain bg-white" />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 text-white text-center text-[11px] sm:text-xs font-sans">
+                <strong>Calendário de Contas:</strong> Datas de vencimento de forma organizada
+              </div>
+            </div>
+
+            <!-- Slide 5 (Checklist) -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transform scale-95 transition-all duration-700 ease-in-out flex flex-col pointer-events-none">
+              <img src="slide_checklist.png" alt="Checklist e Mensagem Final" class="w-full h-full object-contain bg-white" />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 text-white text-center text-[11px] sm:text-xs font-sans">
+                <strong>Checklist Final:</strong> Acompanhe as conquistas até a mensagem final
+              </div>
+            </div>
+
+          </div>
           </div>
         </div>
       </div>
@@ -1148,6 +1174,48 @@
           }
         });
       }
+    });
+  </script>
+
+  <!-- Script do Carrossel de Páginas do Ebook -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const slides = document.querySelectorAll(".carousel-slide");
+      let currentSlide = 0;
+      let autoplayTimer = null;
+
+      function showSlide(index) {
+        if (index >= slides.length) currentSlide = 0;
+        else if (index < 0) currentSlide = slides.length - 1;
+        else currentSlide = index;
+
+        slides.forEach((slide, i) => {
+          if (i === currentSlide) {
+            slide.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+            slide.classList.add("opacity-100", "scale-100");
+          } else {
+            slide.classList.remove("opacity-100", "scale-100");
+            slide.classList.add("opacity-0", "scale-95", "pointer-events-none");
+          }
+        });
+      }
+
+      function startAutoplay() {
+        stopAutoplay();
+        autoplayTimer = setInterval(() => {
+          showSlide(currentSlide + 1);
+        }, 3000); // Transitions every 3 seconds
+      }
+
+      function stopAutoplay() {
+        if (autoplayTimer) {
+          clearInterval(autoplayTimer);
+        }
+      }
+
+      // Initialize
+      showSlide(currentSlide);
+      startAutoplay();
     });
   </script>
 </body>
